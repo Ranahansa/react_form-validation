@@ -1,4 +1,6 @@
 import React ,{useState} from 'react'
+import './style.css'
+
 
 const Validation = () => {
 
@@ -19,7 +21,7 @@ const Validation = () => {
 
     const validate = (e) => {
         e.preventDefault()
-        
+
         if(userName.length < 1){
             setUserNameError("Username is required")
             setUserColor("red")

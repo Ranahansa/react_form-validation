@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+      <h1>Form Validation</h1>
       <Validation />
     </>
   )
