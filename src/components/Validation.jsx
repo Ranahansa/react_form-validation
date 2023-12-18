@@ -2,12 +2,12 @@ import React from 'react'
 
 const Validation = () => {
 
-    const [username, setUsername] = useState("")
+    const [userName, setUserName] = useState("")
     const[email, setEmail] = useState("")
     const[password, setPassword] = useState("")
     const[confirmPassword, setConfirmPassword] = useState("")
 
-    const [usernameError, setUsernameError] = useState()
+    const [userNameError, setUserNameError] = useState()
     const [emailError, setEmailError] = useState()
     const [passwordError, setPasswordError] = useState()
     const [confirmPasswordError, setConfirmPasswordError] = useState()
@@ -25,9 +25,9 @@ const Validation = () => {
                 <form>
                     <input type="text" placeholder='Username'
                     style={{borderColor:userColor}}
-                    value={username} 
-                    onChange={(e) => setUsername(e.target.value)}/>
-                    <p>{usernameError}</p>
+                    value={userName} 
+                    onChange={(e) => setUserName(e.target.value)}/>
+                    <p>{userNameError}</p>
 
                     <input type="email" 
                     placeholder='Email' 
